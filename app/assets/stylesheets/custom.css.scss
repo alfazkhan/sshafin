@@ -1,0 +1,26 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-default{
+  background-color: #fff;
+}
+
+.jumbotron{
+  background-color: #9BBFDF;
+  background-image: asset-url('jtron.jpg');
+  height: 30em;
+}
+
+p.link{
+color: #9BBFDF;
+}
+
+p.link:hover{
+  color: #666666;
+}
+
+
+
