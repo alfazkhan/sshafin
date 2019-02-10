@@ -21,6 +21,50 @@ color: #9BBFDF;
 p.link:hover{
   color: #666666;
 }
+.img-circle {
+  border: 3px solid #666666;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.footer{
+  height: 300px;
+  background-color: #222222;
+  margin-top: 5em;
+}
+
+.shadow{
+  box-shadow: 5px 5px 20px #999999;
+
+}
 
 
+.red{
+  background-color: #e17470;
+}
+
+.green{
+  background-color: #70e090;
+}
+
+.yellow{
+  background-color: #e0dd70;
+}
+
+.skyblue{
+  background-color: #70e0e0;
+}
+
+.blue{
+  background-color: #7078e0;
+}
+
+.orange{
+  background-color: #ff8955;
+}
 
