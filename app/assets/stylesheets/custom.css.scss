@@ -8,7 +8,7 @@
   background-color: #fff;
 }
 
-.jumbotron{
+.jumbotron-main{
   background-color: #9BBFDF;
   background-image: asset-url('jtron.jpg');
   height: 30em;
@@ -21,9 +21,12 @@ color: #9BBFDF;
 p.link:hover{
   color: #666666;
 }
+
 .img-circle {
-  border: 3px solid #666666;
+  border: 0.2vw solid #666666;
 }
+
+
 
 .center {
     display: block;
@@ -32,8 +35,13 @@ p.link:hover{
     width: 50%;
 }
 
+p.well{
+  font-max-size: 50px;
+  font-min-size: 30px;
+}
+
 .footer{
-  height: 300px;
+  height: 30vmin;
   background-color: #222222;
   margin-top: 5em;
 }
@@ -43,6 +51,15 @@ p.link:hover{
 
 }
 
+.resize{
+  height: 100px;
+  width: 100px;
+}
+
+.well-sm{
+  font-size: smaller;
+
+}
 
 .red{
   background-color: #e17470;
@@ -68,3 +85,7 @@ p.link:hover{
   background-color: #ff8955;
 }
 
+.vl {
+  border-left: 1px solid grey;
+  height: 300px;
+}
