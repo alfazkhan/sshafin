@@ -1,0 +1,14 @@
+<% if obj.errors.any? %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <ul>
+          <% obj.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <%end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+<%end %>

@@ -1,37 +1,51 @@
-<%= form_with(model: message, local: true) do |form| %>
-  <% if message.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
+<%= form_for(:message, :html => {class:"form-horizontal",role:"form"},url: message)  do |b| %>
 
-      <ul>
-      <% message.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  <%= render 'messages/errors', obj: Message.new  %>
+  <div class="form-horizontal">
+
+
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Name %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.text_field :username, class:"form-control", placeholder:"Jake Peralta", autofocus: true %>
+      </div>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Email %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.email_field :email, class:"form-control" , placeholder:"example@example.com" %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
-  </div>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Phone %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.text_field :phone, class:"form-control" , placeholder:"+91-1234567890" %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :message %>
-    <%= form.text_area :message %>
-  </div>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :message %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.text_area :message, class:"form-control" , placeholder:"Hi! I want to say that...." %>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= b.submit "Send" ,class:"btn btn-primary lo-lg"%>
+      </div>
+    </div>
   </div>
-<% end %>
+<%end %>
+

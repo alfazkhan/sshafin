@@ -1,5 +1,8 @@
-<h1>New Message</h1>
+<hr>
+<div class="container" id="message">
+  <div class="well well-lg">
+    <h1 style="text-align: center;font-family: 'Arial';padding-bottom: 7vmin;padding-top: 1em;font-size: 5vmin">Contact Us</h1>
+    <%= render 'form', message: @message %>
+  </div>
+</div>
 
-<%= render 'form', message: @message %>
-
-<%= link_to 'Back', messages_path %>

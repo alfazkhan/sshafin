@@ -5,6 +5,11 @@
     <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header" style="margin-left: 5em">
   <div class="row">
+
+    <%= link_to root_path do %>
+      <%= image_tag 'logo.png', width: 180, height: 50, alt: 'Sshafin Hospital'%>
+    <% end %>
+
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
@@ -12,19 +17,15 @@
       <span class="icon-bar"></span>
     </button>
 
-      <%= link_to root_path do %>
-        <%= image_tag 'logo.png', width: 180, height: 50, alt: 'Sshafin Hospital'%>
-      <% end %>
-
   </div>
 </div>
 
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<div class="collapse" id="bs-example-navbar-collapse-1">
   <ul class="nav navbar-nav navbar-right" style="margin-right: 10em">
     <li><a href=#home><p class="link">Home</p></a></li>
     <li><a href=#department><p class="link">Departments</p></a></li>
     <li><a href=#ourteam><p class="link">Our Team</p></a></li>
-    <li><a href="/messages/new"><p class="link">Contact Us!</p></a></li>
+    <li><a href="#message"><p class="link">Contact Us!</p></a></li>
     <li><a href=#find><p class="link">Find Us</p></a></li>
   </ul>
 </div>

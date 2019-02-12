@@ -10,6 +10,7 @@ class MessagesController < ApplicationController
   # GET /messages/1
   # GET /messages/1.json
   def show
+
   end
 
   # GET /messages/new
@@ -28,8 +29,8 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        format.html { redirect_to @message, notice: 'Message was successfully created.' }
-        format.json { render :show, status: :created, location: @message }
+        flash.now[:notice] = "Message Sent"
+        format.html { redirect_to root_path}
       else
         format.html { render :new }
         format.json { render json: @message.errors, status: :unprocessable_entity }

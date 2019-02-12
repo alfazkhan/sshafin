@@ -1,16 +1,16 @@
 <%= render 'pages/navbar' %>
-<div style="height: 100px;margin-top: 2em" id="home" ></div>
-<div class="container" >
-<div class="jumbotron-main" >
-    <div class="row">
-      <div class="col-xs-offset-2 col-xs-6 col-md-offset-2 col-md-6 ">
-        <h1>Welcome!</h1>
+<div style="height: 10vmin;margin-top: 2em" id="home" ></div>
+<div class="" >
+<div class="jumbotron-main" style="height: 70vmin" >
+    <div class="row" >
+      <div class="col-xs-offset-2 col-xs-6 col-md-offset-2 col-md-6 " style="margin-top: 1vmin">
+        <h1 style="font-size: 5vmin">Welcome!</h1>
         <blockquote>
-          <p>The hospital that feeds you refined sugar, white bread, canned soup, bouillon cubes,
+          <p style="font-size: 2vmin">The hospital that feeds you refined sugar, white bread, canned soup, bouillon cubes,
             and frozen vegetables should be closed by the health department as a menace to the public health.</p>
         </blockquote>
 
-        <a href="/messages/new" style="margin-left: 4vmin"><p class="btn btn-primary">Contact Us!</p></a>
+        <a href="#message" style="margin-left: 4vmin"><p class="btn btn-primary">Contact Us!</p></a>
       </div>
     </div>
   </div>
@@ -20,6 +20,10 @@
 
 <%= render 'pages/ourteam' %>
 
+<%= render :template => "messages/new",message: @message %>
+
 <%= render 'pages/findus' %>
+
+
 
 <%= render 'pages/footer' %>
