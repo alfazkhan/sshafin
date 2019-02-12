@@ -19,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/app/views/admins/new.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admins/show.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admins/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/messages/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/messages/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/messages/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/messages/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/pages/_departments.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/_departments.html.erb" afterDir="false" />
@@ -68,7 +69,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="3" />
-          <entry key="erb" value="78" />
+          <entry key="erb" value="79" />
           <entry key="js" value="1" />
           <entry key="rb" value="32" />
           <entry key="scss" value="3" />
@@ -78,7 +79,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="1" />
-          <entry key="RHTML" value="78" />
+          <entry key="RHTML" value="79" />
           <entry key="Ruby" value="35" />
           <entry key="SCSS" value="3" />
           <entry key="YAML" value="1" />
@@ -87,7 +88,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="64" />
-          <entry key="erb" value="4156" />
+          <entry key="erb" value="4158" />
           <entry key="js" value="52" />
           <entry key="rb" value="744" />
           <entry key="scss" value="648" />
@@ -96,7 +97,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="52" />
-          <entry key="RHTML" value="4156" />
+          <entry key="RHTML" value="4158" />
           <entry key="Ruby" value="808" />
           <entry key="SCSS" value="648" />
         </counts>
@@ -108,11 +109,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/_navbar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="116">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="166" selection-start-line="11" selection-start-column="166" selection-end-line="11" selection-end-column="166" />
             </state>
           </provider>
         </entry>
@@ -181,7 +191,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20190210172155_delete_message.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/_form.html.erb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20190211174621_add_password.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
@@ -204,6 +213,7 @@
         <option value="$PROJECT_DIR$/app/views/messages/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_dropdown.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/_navbar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -438,19 +448,18 @@
       <workItem from="1549909580317" duration="544000" />
       <workItem from="1549967967470" duration="835000" />
       <workItem from="1549980531457" duration="1212000" />
-      <workItem from="1549989679531" duration="5116000" />
+      <workItem from="1549989679531" duration="5358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43326000" />
+    <option name="totallyTimeSpent" value="43568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="top" id="Favorites" order="0" show_stripe_button="false" weight="0.25316456" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17987806" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17987806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
@@ -462,7 +471,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33689025" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33689025" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -512,13 +521,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20190210152258_create_messages.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190210172155_delete_message.rb" />
     <entry file="file://$PROJECT_DIR$/app/views/pages/_form.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -676,7 +678,14 @@
     <entry file="file://$PROJECT_DIR$/app/views/pages/_navbar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="166" selection-start-line="11" selection-start-column="166" selection-end-line="11" selection-end-column="166" />
         </state>
       </provider>
     </entry>
