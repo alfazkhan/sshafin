@@ -2,6 +2,16 @@
 <div class="container" id="message">
   <div class="well well-lg">
     <h1 style="text-align: center;font-family: 'Arial';padding-bottom: 7vmin;padding-top: 1em;font-size: 5vmin">Contact Us</h1>
+<%if @x==1 %>
+    <div class="alert alert-danger alert-dismissible">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+
+      <% for i in 0...@count %>
+        <%= @msg[0][i]%><br>
+
+       <%end %>
+    </div>
+<%end %>
     <%= render 'form', message: @message %>
   </div>
 </div>

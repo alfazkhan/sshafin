@@ -4,7 +4,7 @@ class PagesController < MessagesController
   end
 
   def new
-    @message = Message.new
+    @messages = Message.new
   end
 
 end

@@ -1,0 +1,35 @@
+<hr>
+
+
+<div class="" id="message" style="margin-top: 15vmin">
+  <div class="jumbotron">
+    <% if @x==1 %>
+      <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <%= @msg %>
+      </div>
+    <%end %>
+    <div class="row">
+      <div class="col-xs-offset-4 col-xs-4">
+        <h1 style="text-align: center;padding-bottom: 3em">Contact us!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-2 col-xs-3">
+        <p style="font-size: 2.5vmin">Call us on: +91-0987654321</p>
+      </div>
+      <div class="col-xs-1">
+        |
+      </div>
+      <div class="col-xs-3">
+
+        <input type="button"  onClick="$('#myModal').modal()" value="Send Message" class="btn btn-primary">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <%= render :template => "messages/new",message: @message %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

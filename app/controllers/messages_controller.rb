@@ -1,10 +1,13 @@
 class MessagesController < ApplicationController
-  before_action :set_message, only: [:show, :edit, :update, :destroy]
+  before_action :set_message, only: [:show, :edit, :update, :delete]
+  before_action :require_user,only: [:show,:index]
 
   # GET /messages
   # GET /messages.json
   def index
-    @messages = Message.all
+
+    @message = Message.paginate(page: params[:page], per_page: 10)
+    @cars = @message.group_by { |r| r.created_at.to_date }
   end
 
   # GET /messages/1
@@ -29,8 +32,16 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        flash.now[:notice] = "Message Sent"
-        format.html { redirect_to root_path}
+        @x=1
+        @msg = "Message Received, we will try to get back to you soon"
+        format.html { redirect_to "#message"}
+      elsif(@message.errors.any?)
+        @x=1
+        flash[:Danger] = "Invalid Message"
+        @msg=[]
+        @count=@message.errors.count
+        @msg=@message.errors.full_messages.split(' ')
+        format.html { render :new }
       else
         format.html { render :new }
         format.json { render json: @message.errors, status: :unprocessable_entity }
@@ -54,12 +65,12 @@ class MessagesController < ApplicationController
 
   # DELETE /messages/1
   # DELETE /messages/1.json
-  def destroy
+  def delete
+    @message=Message.find(params[:id])
     @message.destroy
-    respond_to do |format|
-      format.html { redirect_to messages_url, notice: 'Message was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+
+    flash[:danger] = "Message Deleted"
+    redirect_to messages_path
   end
 
   private

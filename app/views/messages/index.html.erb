@@ -1,33 +1,46 @@
-<p id="notice"><%= notice %></p>
+
 
 <h1>Messages</h1>
+<div style="text-align: center">
+  <%= will_paginate @message %>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Phone</th>
-      <th>Message</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="alert alert-success alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <%= flash[:danger] %>
+</div>
 
-  <tbody>
-    <% @messages.each do |message| %>
-      <tr>
-        <td><%= message.name %></td>
-        <td><%= message.email %></td>
-        <td><%= message.phone %></td>
-        <td><%= message.message %></td>
-        <td><%= link_to 'Show', message %></td>
-        <td><%= link_to 'Edit', edit_message_path(message) %></td>
-        <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div>
+<% @message.each do |message| %>
+  <div class="col-xs-4 col-xs-offset-4">
+    <div class="well well-lg">
+      <div class="movie-title">
+        <%= link_to message.name, message_path(message) %>
+      </div>
 
-<br>
+     
 
-<%= link_to 'New Message', new_message_path %>
+      <div class="movie-body">
+        <%= truncate(message.message, length: 300) %>
+        <div class="message-meta-details">
+          <small>
+            &nbsp| Created On: <%=time_ago_in_words(message.created_at)  %>
+            &nbsp| Last Updated On: <%= time_ago_in_words(message.updated_at) %>
+          </small>
+        </div>
+      </div>
+
+
+      <%=link_to 'Delete', delete_message_path(message), data:{confirm: "Are you Sure?"},class: "btn btn-xs btn-danger" %>
+
+
+    </div>
+  </div>
+
+<%end %>
+</div>
+
+
+<div style="text-align: center">
+  <%= will_paginate @message %>
+</div>
