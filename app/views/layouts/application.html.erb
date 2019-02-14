@@ -20,6 +20,18 @@
   </head>
   <%= render 'pages/navbar' %>
   <body>
+
+      <%if logged_in?%>
+        <div class="row" style="margin-top: 15vmin">
+          <div class="col-xs-offset-2 col-xs-4">
+              <%= link_to 'Admin',admin_path,class:"btn btn-lg btn-success btn-block",style:"color:#ffffff;text-align:center"  %>
+          </div>
+          <div class=" col-xs-4">
+            <%= link_to 'Logout',logout_path,class:"btn btn-lg btn-danger btn-block ",style:"color:#ffffff;text-align:center" %>
+          </div>
+        </div>
+      <%end %>
+
     <%= yield %>
   </body>
 </html>

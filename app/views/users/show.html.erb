@@ -1,9 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+<div style="height: 15vmin"></div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div>
+  <h1 style="font-size: 5vmin;text-align: center;padding-bottom: 10vmin">User Profile</h1>
+
+    <div class="col-xs-offset-2 col-xs-8">
+      <div class="well well-lg" style="background-color: #f2f2f2">
+        <div class="movie-title">
+          <p style="text-align: center;font-size: 4vmin;padding-bottom: 3vmin"><%= @user.username %></p>
+        </div>
+        <div class="img img-responsive img-rounded col-xs-offset-4 col-xs-4" style="padding-bottom: 10vmin">
+          <%= link_to image_tag 'doc.png' %>
+        </div>
+        <div class="row">
+        <div class="col-xs-offset-4 col-xs-3"><%= link_to 'Edit', edit_user_path(@user),class: "btn btn-sm btn-primary",style:"color:#ffffff;text-align:center" %></div>
+        <div class="col-xs-3"> <%= link_to 'Back', users_path,class: "btn btn-sm btn-danger",style:"color:#ffffff;text-align:center"%></div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+
+

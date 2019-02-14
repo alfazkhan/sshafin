@@ -2,37 +2,31 @@
 
 
 <div class="" id="message" style="margin-top: 15vmin">
-  <div class="jumbotron">
-    <%= @x %>
+  <div class="jumbotron" style=" border-radius: 1vmin">
 
-    <% if @x==1 %>
-      <div class="alert alert-success alert-dismissible">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <%= flash[:x]="Message Sent"%>
-        <%= @x %>
-      </div>
-    <%end %>
+
+        <%= flash[:x]%>
+
     <div class="row">
-      <div class="col-xs-offset-4 col-xs-4">
-        <h1 style="text-align: center;padding-bottom: 3em">Contact us!</h1>
+      <div class="col-xs-offset-2 col-xs-8">
+        <h1 style="text-align: center;padding-bottom: 5vmin">Contact us!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-2 col-xs-8">
+        <p style="font-size: 2.5vmin;padding-bottom: 3vmin">Meet us at trade fairs - world­wide
+          KAEFER is de­lighted to par­ti­cip­ate in the trade fairs men­tioned be­low. We are look­ing for­ward to build­ing up and in­tensi­fy­ing out net­work with you , in or­der to dis­cuss and demon­strate our ex­pert­ise in our fields of busi­ness, as well as in­tensi­fy­ing ex­ist­ing and de­vel­op­ing new busi­ness op­por­tun­it­ies.
+        </p>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-offset-2 col-xs-3">
-        <p style="font-size: 2.5vmin">Call us on: +91-0987654321</p>
-      </div>
-      <div class="col-xs-1">
-        |
-      </div>
-      <div class="col-xs-3">
-
-        <input type="button"  onClick="$('#myModal').modal()" value="Send Message" class="btn btn-primary">
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <%= render :template => "messages/new",message: @message %>
-        </div>
+        <input type="button"  onClick="$('#myModal').modal()" value="Send Message" class="btn btn-lg btn-primary">
       </div>
     </div>
   </div>
 </div>
-
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <%= render :template => "messages/new",message: @message %>
+</div>
 

@@ -8,7 +8,6 @@ class PagesController < MessagesController
   end
 
   def create
-    @x=1
     flash[:x] = "Hiiii"
   end
 

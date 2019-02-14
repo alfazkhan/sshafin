@@ -41,7 +41,7 @@ p.well{
 }
 
 .footer{
-  height: 30vmin;
+  height: 100cm;
   background-color: #222222;
   margin-top: 5em;
 }
@@ -61,29 +61,7 @@ p.well{
 
 }
 
-.red{
-  background-color: #e17470;
-}
 
-.green{
-  background-color: #70e090;
-}
-
-.yellow{
-  background-color: #e0dd70;
-}
-
-.skyblue{
-  background-color: #70e0e0;
-}
-
-.blue{
-  background-color: #7078e0;
-}
-
-.orange{
-  background-color: #ff8955;
-}
 
 .vl {
   border-left: 1px solid grey;
@@ -93,10 +71,21 @@ p.well{
 .movie-title{
   font-weight: bold;
   font-size: 1.5em;
+  color: #2b2fe1;
+}
+
+p.a{
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #2b2fe1;
 }
 
 .movie-body{
   border-top: 1px solid #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.btn{
+  color: #ffffff;
 }
