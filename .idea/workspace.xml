@@ -38,7 +38,7 @@
         <counts>
           <entry key="Gemfile" value="5" />
           <entry key="erb" value="107" />
-          <entry key="js" value="1" />
+          <entry key="js" value="2" />
           <entry key="rb" value="59" />
           <entry key="scss" value="5" />
           <entry key="yml" value="1" />
@@ -46,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="2" />
           <entry key="RHTML" value="107" />
           <entry key="Ruby" value="64" />
           <entry key="SCSS" value="5" />
@@ -56,7 +56,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="64" />
-          <entry key="erb" value="5507" />
+          <entry key="erb" value="5513" />
           <entry key="js" value="52" />
           <entry key="rb" value="1602" />
           <entry key="scss" value="650" />
@@ -65,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="52" />
-          <entry key="RHTML" value="5507" />
+          <entry key="RHTML" value="5513" />
           <entry key="Ruby" value="1666" />
           <entry key="SCSS" value="650" />
         </counts>
@@ -107,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="100">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -264,6 +264,13 @@
               <item name="sshafin" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sshafin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sshafin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sshafin" type="b2602c69:ProjectViewProjectNode" />
@@ -492,19 +499,19 @@
       <workItem from="1549967967470" duration="835000" />
       <workItem from="1549980531457" duration="1212000" />
       <workItem from="1549989679531" duration="5358000" />
-      <workItem from="1550152261342" duration="1440000" />
+      <workItem from="1550152261342" duration="2027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56776000" />
+    <option name="totallyTimeSpent" value="57363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="top" id="Favorites" order="0" show_stripe_button="false" weight="0.25316456" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18597561" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18597561" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
@@ -516,7 +523,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39634147" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39634147" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -532,13 +539,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.scss" />
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -772,10 +772,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state relative-caret-position="100">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
         </state>
       </provider>
     </entry>
