@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get 'message', to:'message#new'
   post '/', to:'messages#create'
+  post '/', to:'pages#count'
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   get 'logout', to:'sessions#delete'

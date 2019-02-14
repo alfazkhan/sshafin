@@ -7,4 +7,9 @@ class PagesController < MessagesController
     @messages = Message.new
   end
 
+  def create
+    @x=1
+    flash[:x] = "Hiiii"
+  end
+
 end

@@ -3,10 +3,13 @@
 
 <div class="" id="message" style="margin-top: 15vmin">
   <div class="jumbotron">
+    <%= @x %>
+
     <% if @x==1 %>
       <div class="alert alert-success alert-dismissible">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <%= @msg %>
+        <%= flash[:x]="Message Sent"%>
+        <%= @x %>
       </div>
     <%end %>
     <div class="row">
