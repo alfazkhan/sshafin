@@ -4,6 +4,6 @@ class Message < ApplicationRecord
   validates :phone, length: {minimum: 7, maximum: 10}
 
   validates :message, presence: true,
-            length: {minimum: 10,maximum: 100}
+            length: {minimum: 10,maximum: 200}
 
 end

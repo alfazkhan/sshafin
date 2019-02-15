@@ -8,12 +8,12 @@ class MessagesController < ApplicationController
   end
 
   def show
-
+    @message=Message.find(params[:id])
   end
 
 
   def new
-    @message = Message.new
+    @message=Message.new
   end
 
   def edit
@@ -76,4 +76,4 @@ class MessagesController < ApplicationController
       params.require(:message).permit(:name, :email, :phone, :message)
     end
 
-end
+  end
