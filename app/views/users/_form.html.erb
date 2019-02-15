@@ -1,22 +1,41 @@
-<%= form_with(model: user, local: true) do |form| %>
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-      <ul>
-      <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+
+<%= form_with(model: user, local: true) do |b| %>
+
+  <div class="form-horizontal" style="position: center">
+
+
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Username %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.text_field :username, class:"form-control", placeholder:"Username", autofocus: true %>
+      </div>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :username %>
-    <%= form.text_field :username %>
+
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Password %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.password_field :password, class:"form-control" , placeholder:"********",autocomplete:"off" %>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col-xs-offset-4 col-xs-4">
+      <div class="form-group" >
+        <div class="btn-group-sm" >
+          <%= b.submit "Edit User" ,class:"btn btn-primary"%>
+          <%= link_to "Cancel",user_path(current_user.id),class:"btn btn-danger",style:"color:#fff"  %>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
   </div>
-<% end %>
+<%end %>
+
+

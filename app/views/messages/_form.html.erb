@@ -1,6 +1,6 @@
 <%= form_for(:message, :html => {class:"form-horizontal",role:"form"},url: message)  do |b| %>
 
-  <div class="form-horizontal">
+  <div class="form-horizontal" style="position: center">
 
 
     <div class="form-group">
@@ -44,7 +44,7 @@
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
 
-        <%= b.submit "Send Message" ,class:"btn btn-primary"%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <%= b.submit "Send Message" ,class:"btn btn-primary",style:"position:fixed"%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <a href="#message" class="btn btn-danger" style="color: #ffffff" >Cancel</a>
 
