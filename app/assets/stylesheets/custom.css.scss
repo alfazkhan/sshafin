@@ -4,8 +4,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.navbar-default{
-  background-color: #fff;
+$navbar-default-bg:#1c344e;
+
+.carousel-inner > .item > img{
+  margin:auto;
+  width:100%;
+  height: 70vmin;
+
 }
 
 .jumbotron-main{
@@ -25,7 +30,6 @@ p.link:hover{
 .img-circle {
   border: 0.2vw solid #666666;
 }
-
 
 
 .center {
